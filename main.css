@@ -7,7 +7,7 @@
   --very-dark-cyan: hsl(179, 100%, 13%);
   --transparent-white: hsla(0, 0%, 100%, 0.75);
   --very-light-grey: hsl(0, 0%, 95%);
-  --margin-top: 2rem;
+  --margin-top: 2.2rem;
   --margin-top-lrg: 5.5rem;
 }
 
@@ -36,38 +36,39 @@ html {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 1.7;
   font-weight: 400;
   font-family: var(--primary-font);
   background-color: var(--very-light-grey);
   color: var(--transparent-white);
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
-  padding: 2em;
+  margin: 2em 0;
+  width: 90%;
   max-width: 920px;
-  margin: 3rem auto;
   border-radius: 0.5rem;
+  border: 2px solid red;
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
-  body {
-    display: flex;
-  }
+@media (min-width: 50rem) {
   .container {
-    padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: left;
-  padding: 3.2em;
+  padding: 4em 3em;
 }
 .card__title {
   color: var(--very-light-grey);
@@ -75,10 +76,12 @@ body {
   text-transform: uppercase;
   font-size: 2.66rem;
   font-weight: 700;
+  line-height: normal;
   margin-top: var(--margin-top);
 }
 .card__text {
   margin-top: 1.5rem;
+  max-width: 40ch;
 }
 .card__button {
   background-color: var(--very-light-grey);
@@ -86,11 +89,6 @@ body {
   border-radius: 30px;
   padding: 1em 2em;
   margin-top: var(--margin-top);
-}
-@media (min-width: 50rem) {
-  .card__button {
-    margin-top: var(--margin-top-lrg);
-  }
 }
 .card__button--sedans {
   color: var(--orange);
@@ -114,4 +112,44 @@ body {
 }
 .card__luxury {
   background-color: var(--very-dark-cyan);
+}
+
+@media (min-width: 30rem) {
+  .card {
+    align-items: center;
+  }
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .card__image {
+    width: 15%;
+  }
+  .card__text {
+    max-width: 40ch;
+  }
+  .card__button {
+    align-self: flex-end;
+  }
+}
+@media (min-width: 50rem) {
+  .card {
+    align-items: initial;
+    padding: 4em 2em;
+    flex: 1;
+  }
+  .card__content {
+    display: block;
+    width: 100%;
+  }
+  .card__image {
+    width: initial;
+  }
+  .card__text {
+    max-width: 25ch;
+  }
+  .card__button {
+    margin-top: var(--margin-top-lrg);
+  }
 }/*# sourceMappingURL=main.css.map */
