@@ -1,8 +1,11 @@
 html {
-  font-size: 0.9375rem;
+  font-size: 15px;
 }
 
 body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
   font-weight: 400;
   font-family: var(--primary-font);
   background-color: var(--very-light-grey);

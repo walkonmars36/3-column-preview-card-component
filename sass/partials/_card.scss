@@ -1,0 +1,64 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 3.2em;
+
+  &__title {
+    color: var(--very-light-grey);
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    font-size: 2.66rem;
+    font-weight: 700;
+    margin-top: var(--margin-top);
+  }
+
+  &__text {
+    margin-top: 1.5rem;
+  }
+
+  &__button {
+    background-color: var(--very-light-grey);
+    border: 2px solid var(--very-light-grey);
+    border-radius: 30px;
+    padding: 1em 2em;
+    margin-top: var(--margin-top);
+
+    @media (min-width: 50rem) {
+      margin-top: var(--margin-top-lrg);
+    }
+
+    &--sedans {
+      color: var(--orange);
+    }
+
+    &--suvs {
+      color: var(--dark-cyan);
+    }
+
+    &--luxury {
+      color: var(--very-dark-cyan);
+    }
+  }
+
+  &__button:hover,
+  &__button:focus {
+    background-color: transparent;
+    cursor: pointer;
+
+    color: var(--very-light-grey);
+  }
+
+  &__sedans {
+    background-color: var(--orange);
+  }
+
+  &__suvs {
+    background-color: var(--dark-cyan);
+  }
+
+  &__luxury {
+    background-color: var(--very-dark-cyan);
+  }
+}
