@@ -80,7 +80,10 @@ body {
 }
 .card__text {
   margin-top: 1.5rem;
-  max-width: 40ch;
+  max-width: 25ch;
+}
+.card__image {
+  width: min(20vw, 64px);
 }
 .card__button {
   background-color: var(--very-light-grey);
@@ -122,9 +125,6 @@ body {
     flex-direction: column;
     width: 80%;
   }
-  .card__image {
-    width: 15%;
-  }
   .card__text {
     max-width: 40ch;
   }
@@ -141,9 +141,6 @@ body {
   .card__content {
     display: block;
     width: 100%;
-  }
-  .card__image {
-    width: initial;
   }
   .card__text {
     max-width: 25ch;

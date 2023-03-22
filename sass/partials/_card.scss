@@ -16,7 +16,11 @@
 
   &__text {
     margin-top: 1.5rem;
-    max-width: 40ch;
+    max-width: 25ch;
+  }
+
+  &__image {
+    width: min(20vw, 64px);
   }
 
   &__button {
@@ -72,10 +76,6 @@
       width: 80%;
     }
 
-    &__image {
-      width: 15%;
-    }
-
     &__text {
       max-width: 40ch;
     }
@@ -95,10 +95,6 @@
     &__content {
       display: block;
       width: 100%;
-    }
-
-    &__image {
-      width: initial;
     }
 
     &__text {
