@@ -1,6 +1,5 @@
-@use "./partials/variables.scss" as *;
-@use "./partials/typography.scss" as *;
-@use "./partials/reset.scss" as *;
-@use "./partials/base" as *;
-@use "./partials/layout" as *;
-@use "./partials/card.scss" as *;
+@use "./partials/variables.scss";
+@use "./partials/reset.scss";
+@use "./partials/base";
+@use "./partials/layout";
+@use "./partials/card.scss";

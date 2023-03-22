@@ -1,14 +1,13 @@
 .card {
   display: flex;
   flex-direction: column;
-  align-items: left;
   padding: 4em 3em;
 
   &__title {
     color: var(--very-light-grey);
     font-family: var(--title-font);
     text-transform: uppercase;
-    font-size: 2.66rem;
+    font-size: var(--title-font-size);
     font-weight: 700;
     line-height: normal;
     margin-top: var(--margin-top);
@@ -26,7 +25,7 @@
   &__button {
     background-color: var(--very-light-grey);
     border: 2px solid var(--very-light-grey);
-    border-radius: 30px;
+    border-radius: 2rem;
     padding: 1em 2em;
     margin-top: var(--margin-top);
 
@@ -47,7 +46,6 @@
   &__button:focus {
     background-color: transparent;
     cursor: pointer;
-
     color: var(--very-light-grey);
   }
 
@@ -64,7 +62,7 @@
   }
 }
 
-///////////
+/////////// MEDIA QUERIES /////////////
 
 @media (min-width: 30rem) {
   .card {
@@ -88,7 +86,7 @@
 
 @media (min-width: 50rem) {
   .card {
-    align-items: initial;
+    align-items: normal;
     padding: 4em 2em;
     flex: 1;
 
