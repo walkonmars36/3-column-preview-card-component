@@ -93,7 +93,7 @@ a:hover {
   max-width: 25ch;
 }
 .card__image {
-  width: min(20vw, 64px);
+  width: min(20vw, 4.27rem);
 }
 .card__button {
   background-color: var(--very-light-grey);

@@ -19,7 +19,7 @@
   }
 
   &__image {
-    width: min(20vw, 64px);
+    width: min(20vw, 4.27rem);
   }
 
   &__button {
@@ -64,6 +64,8 @@
 
 /////////// MEDIA QUERIES /////////////
 
+//////// 30rem //////////
+
 @media (min-width: 30rem) {
   .card {
     align-items: center;
@@ -83,6 +85,8 @@
     }
   }
 }
+
+////////  50rem /////////
 
 @media (min-width: 50rem) {
   .card {
