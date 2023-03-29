@@ -61,7 +61,7 @@ Mobile first HTML and SCSS with Flexbox
 
 I wanted the design to work across all sizes and so created a layout that looked a bit better on a tablet.
 
-To control the image size I used the min() function, which allowed it scale nicely.
+To control the image size I used the min() function, which allowed it to scale nicely.
 
 ```css
 &__image {
